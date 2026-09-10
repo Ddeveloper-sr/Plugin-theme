@@ -7,18 +7,12 @@ A soft pink, cream, warm-brown and rose Discord theme based on the catgirl artwo
 ### Theme URL
 
 ```text
-https://raw.githubusercontent.com/Ddeveloper-sr/Plugin-theme/main/mochi_catgirl_theme.json
+https://raw.githubusercontent.com/Ddeveloper-sr/Plugin-theme/main/mochi_catgirl_animated.json
 ```
 
 ### ✨ Smooth Animations
 
-Optional smooth animations are provided as a separate theme file:
-
-```text
-https://raw.githubusercontent.com/Ddeveloper-sr/Plugin-theme/main/mochi-smooth-animations.theme.css
-```
-
-The animation theme adds subtle hover movement, smooth buttons and channels, soft popout/modal entrance effects, and reduced-motion support. It is intentionally lightweight to avoid unnecessary performance cost.
+The animated version is packaged as a **Kettu/Revenge-compatible JSON theme**, so Kettu Manager can fetch it directly. Kettu/Revenge themes are fetched over HTTP as JSON theme files. citeturn0search12
 
 ### ☕ Donate me
 
@@ -37,4 +31,4 @@ The theme uses a catgirl artwork background with soft pink and warm dark tones.
 - Warm brown/plum backgrounds
 - Muted rose controls
 
-Designed for Discord clients that support the custom theme JSON format and compatible CSS theme files.
+Designed for Discord mobile clients such as Kettu/Revenge that support the custom theme JSON format.
