@@ -1,6 +1,6 @@
 {
   "name": "Mochi Catgirl — Smooth Animated",
-  "description": "Mochi Catgirl all-in-one Kettu/Revenge theme with soft pink colors, catgirl background, smooth transitions, and mobile-friendly styling.",
+  "description": "Mochi Catgirl all-in-one Kettu/Revenge theme with soft pink colors, catgirl background, smooth transitions, and cute font styling.",
   "authors": [{"name": "Hori"}],
   "spec": 2,
   "semanticColors": {
@@ -140,6 +140,17 @@
       "scaleFrom": 0.985
     },
     "reducedMotionSupport": true
+  },
+  "fontStyling": {
+    "enabled": true,
+    "fontFamily": "Comfortaa",
+    "fallback": ["Nunito", "Quicksand", "sans-serif"],
+    "fontWeight": "500",
+    "headingWeight": "700",
+    "letterSpacing": 0.15,
+    "lineHeightScale": 1.04,
+    "applyTo": ["messages", "channels", "headers", "buttons", "inputs", "popouts"],
+    "useClientFontIfAvailable": true
   },
   "createdAt": "2026-09-10",
   "source": "local"
