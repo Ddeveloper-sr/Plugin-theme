@@ -1,7 +1,12 @@
 {
   "name": "Mochi Catgirl — Soft Kitty",
   "description": "Soft pink, cream, warm brown and blue Discord theme based on the kitty artwork.",
-  "authors": [{"name": "Hori", "id": "1"}],
+  "authors": [
+    {
+      "name": "Hori",
+      "id": "1"
+    }
+  ],
   "semanticColors": {
     "BACKGROUND_PRIMARY": ["#322024", "#322024", "#322024"],
     "BACKGROUND_SECONDARY": ["#4A363A", "#4A363A", "#4A363A"],
@@ -18,6 +23,7 @@
     "BACKGROUND_NESTED_FLOATING": ["#5E474A", "#5E474A", "#5E474A"],
     "BG_BACKDROP": ["#24171BB3", "#24171BB3", "#24171BB3"],
     "BG_BASE_PRIMARY": ["#24171B", "#24171B", "#24171B"],
+    "BG_SURFACE_OVERLAY_TMP": ["#322024", "#322024", "#322024"],
     "CARD_PRIMARY_BG": ["#322024", "#322024", "#322024"],
     "CARD_SECONDARY_BG": ["#4A363A", "#4A363A", "#4A363A"],
     "CHAT_BACKGROUND": ["transparent", "transparent", "transparent"],
@@ -44,7 +50,6 @@
     "BUTTON_PRIMARY_BACKGROUND": ["#CF7787", "#CF7787", "#CF7787"],
     "BUTTON_PRIMARY_BACKGROUND_HOVER": ["#E58F9D", "#E58F9D", "#E58F9D"],
     "BUTTON_PRIMARY_TEXT": ["#FFFFFF", "#FFFFFF", "#FFFFFF"],
-    "MENTION_BACKGROUND": ["#E58F9D33", "#E58F9D33", "#E58F9D33"],
     "MENTION_FOREGROUND": ["#FFD0D4", "#FFD0D4", "#FFD0D4"],
     "STATUS_DANGER_BACKGROUND": ["#D96E7B", "#D96E7B", "#D96E7B"],
     "STATUS_DANGER_TEXT": ["#FFFFFF", "#FFFFFF", "#FFFFFF"],
@@ -95,12 +100,38 @@
     "BRAND_360": "#F0A0AC",
     "BRAND_500": "#E58F9D",
     "BRAND_560": "#CF7787",
-    "BRAND_600": "#B85F70"
+    "BRAND_600": "#B85F70",
+    "RED_400": "#D96E7B",
+    "RED_430": "#D96E7B",
+    "RED_460": "#B84E5E",
+    "GREEN_360": "#8FC7A5",
+    "WHITE_500": "#FFF7F2",
+    "YELLOW_300": "#E4BE78",
+    "PLUM_20": "#5E474A",
+    "PLUM_16": "#4A363A",
+    "PLUM_22": "#322024"
   },
   "background": {
     "url": "https://raw.githubusercontent.com/Ddeveloper-sr/Cat-theme/main/48e975d8b4ed8e04248e2b90bcafaffa.jpg",
+    "blur": 0.0,
     "alpha": 0.35,
     "size": "cover",
     "position": "center"
-  }
+  },
+  "plus": {
+    "version": 0,
+    "customOverlays": true,
+    "icons": {
+      "ic_mic_neutral": "#E58F9D",
+      "ic_mic_muted_neutral": "#D96E7B",
+      "ic_soundboard": "#F0A0AC",
+      "ic_soundboard_muted": "#D96E7B",
+      "ic_video": "#8FC7A5",
+      "ic_video_disabled": "#D96E7B"
+    },
+    "iconpack": "rosiecord-plumpy"
+  },
+  "spec": 2,
+  "createdAt": "2026-09-10",
+  "source": "local"
 }
