@@ -1,0 +1,11 @@
+{
+  "name": "Mochi Smooth Animations",
+  "description": "Subtle native layout animations for the Mochi Catgirl theme on Kettu/Revenge.",
+  "authors": [
+    {
+      "name": "Hori"
+    }
+  ],
+  "main": "index.js",
+  "hash": "2efa2e5ebda097fa"
+}
