@@ -1,20 +1,41 @@
 /**
- * @name Mochi Smooth Animations
+ * @name Mochi Smooth Animations + Comfortaa
  * @author Hori
- * @version 1.0.0
- * @description Subtle, performance-friendly smooth animations for the Mochi Catgirl Discord theme.
+ * @version 1.1.0
+ * @description Smooth animations and cute Comfortaa typography for the Mochi Catgirl theme.
  * @source https://github.com/Ddeveloper-sr/Plugin-theme
  * @donate https://ko-fi.com/scott2
  */
 
 :root {
+  --mochi-font-family: "Comfortaa", "Nunito", "Quicksand", sans-serif;
+  --mochi-font-weight: 500;
+  --mochi-heading-weight: 700;
   --mochi-animation-speed: 180ms;
   --mochi-animation-ease: cubic-bezier(0.22, 1, 0.36, 1);
   --mochi-animation-fast: 120ms;
   --mochi-animation-slow: 260ms;
 }
 
-/* Keep motion subtle and avoid expensive global transitions. */
+/* Cute rounded typography. */
+body,
+button,
+input,
+textarea,
+[role="button"],
+[role="textbox"] {
+  font-family: var(--mochi-font-family) !important;
+  font-weight: var(--mochi-font-weight);
+  letter-spacing: 0.15px;
+}
+
+h1, h2, h3,
+[class*="header"],
+[class*="title"] {
+  font-family: var(--mochi-font-family) !important;
+  font-weight: var(--mochi-heading-weight);
+}
+
 button,
 [role="button"] {
   transition:
@@ -35,7 +56,6 @@ button:active:not(:disabled),
   transform: translateY(0) scale(0.985);
 }
 
-/* Server and channel items get a soft slide instead of an abrupt jump. */
 nav [role="treeitem"],
 nav [data-list-item-id*="channels"],
 nav [data-list-item-id*="guilds"] {
@@ -52,7 +72,6 @@ nav [data-list-item-id*="guilds"]:hover {
   transform: translateX(2px);
 }
 
-/* Avatars and reaction buttons use a tiny scale effect. */
 img[class*="avatar"],
 [class*="avatar"] img,
 [class*="reaction"] {
@@ -67,7 +86,6 @@ img[class*="avatar"]:hover,
   transform: scale(1.035);
 }
 
-/* Popouts, menus and modals fade/slide into place. */
 [class*="popout"],
 [class*="menu"],
 [role="dialog"] {
@@ -76,31 +94,20 @@ img[class*="avatar"]:hover,
 }
 
 @keyframes mochi-fade-slide-in {
-  from {
-    opacity: 0;
-    transform: translateY(6px) scale(0.985);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
+  from { opacity: 0; transform: translateY(6px) scale(0.985); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
 }
 
-/* Message hover highlight stays soft rather than snapping on. */
 [class*="message"] {
   transition: background-color var(--mochi-animation-speed) ease;
 }
 
-/* Smooth scrollbar thumb changes. */
 ::-webkit-scrollbar-thumb {
   transition: background-color var(--mochi-animation-speed) ease;
 }
 
-/* Respect users who prefer reduced motion. */
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
+  *, *::before, *::after {
     animation-duration: 1ms !important;
     animation-iteration-count: 1 !important;
     scroll-behavior: auto !important;
