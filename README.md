@@ -1,22 +1,30 @@
 # Plugin-theme
 
-Mochi Catgirl Discord theme, rebuilt from a clean repository using the kitty artwork palette.
+## Mochi Catgirl Theme
 
-## Theme
+A soft pink, cream, warm-brown and rose Discord theme based on the catgirl artwork.
 
-Raw theme URL:
+### Theme URL
 
-`https://raw.githubusercontent.com/Ddeveloper-sr/Plugin-theme/main/mochi_catgirl_theme.json`
+```text
+https://raw.githubusercontent.com/Ddeveloper-sr/Plugin-theme/main/mochi_catgirl_theme.json
+```
 
-## Background
+### ☕ Donate me
 
-The theme uses the existing kitty artwork hosted by the original Cat-theme repository.
+If you like the theme and want to support the project, you can donate on Ko-fi:
 
-## Palette
+**https://ko-fi.com/scott2**
+
+### Background
+
+The theme uses a catgirl artwork background with soft pink and warm dark tones.
+
+### Palette
 
 - Soft pink accents
 - Cream text
 - Warm brown/plum backgrounds
 - Muted rose controls
 
-Designed for Discord clients that support this custom theme JSON format.
+Designed for Discord clients that support the custom theme JSON format.
