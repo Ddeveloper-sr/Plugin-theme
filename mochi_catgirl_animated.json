@@ -1,6 +1,6 @@
 {
   "name": "Mochi Catgirl — Smooth Animated",
-  "description": "Mochi Catgirl all-in-one Kettu/Revenge theme with soft pink colors, catgirl background, and mobile-friendly smooth styling.",
+  "description": "Mochi Catgirl all-in-one Kettu/Revenge theme with soft pink colors, catgirl background, smooth transitions, and mobile-friendly styling.",
   "authors": [{"name": "Hori"}],
   "spec": 2,
   "semanticColors": {
@@ -107,13 +107,38 @@
   "smoothStyling": {
     "enabled": true,
     "duration": 180,
-    "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
     "fastDuration": 120,
     "slowDuration": 260,
-    "buttonPressScale": 0.985,
-    "channelHoverOffset": 2,
-    "avatarHoverScale": 1.035,
-    "popoutEntrance": "fade-slide-scale",
+    "easing": "easeOutCubic",
+    "transition": {
+      "enabled": true,
+      "duration": 220,
+      "easing": "easeOutCubic",
+      "fade": true,
+      "slide": true,
+      "scale": true,
+      "slideDistance": 6,
+      "scaleFrom": 0.985
+    },
+    "button": {
+      "hoverDuration": 160,
+      "pressDuration": 100,
+      "pressScale": 0.985
+    },
+    "channel": {
+      "hoverDuration": 180,
+      "hoverOffset": 2
+    },
+    "avatar": {
+      "hoverDuration": 120,
+      "hoverScale": 1.035
+    },
+    "popout": {
+      "duration": 260,
+      "fade": true,
+      "slideDistance": 6,
+      "scaleFrom": 0.985
+    },
     "reducedMotionSupport": true
   },
   "createdAt": "2026-09-10",
